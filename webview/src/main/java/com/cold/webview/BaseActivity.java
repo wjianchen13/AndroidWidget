@@ -19,7 +19,7 @@ import android.widget.TextView;
  * desc: webview 使用方法
  * author:
  * date: 2017-06-16 15:10
- * remark:
+ * remark: WebView基础使用方法，开始加载和结束加载监听
  * WebSettings
  * WebViewClient
  * WebChromeClient
@@ -91,35 +91,55 @@ public class BaseActivity extends AppCompatActivity {
      * @return
      */
     private void setWebViewSettings(WebSettings settings) {
-//        settings.setCacheMode(true);
-//        settings.setDefaultTextEncodingName("gbk");
-//        settings.setAllowFileAccess(true); // 启用或禁止WebView访问文件数据
-//        settings.setBlockNetworkImage(); // 是否显示网络图像
-//        settings.setBuiltInZoomControls(true); // 设置是否支持缩放
-//        settings.setDefaultFontSize(); // 设置默认的字体大小
-//        settings.setFixedFontFamily(); // 设置固定使用的字体
-//        settings.setLayoutAlgorithm(WebSettings.LayoutAlgorithm.NARROW_COLUMNS); // 设置布局方式
-//        settings.setLightTouchEnabled(); // 设置用鼠标激活被选项
-//        settings.setSupportZoom(true); // 设置是否支持变焦
-//
-//        settings.setUseWideViewPort(true);
-//
-//        settings.setSupportMultipleWindows(false);
-//        settings.setLoadWithOverviewMode(true);
-//
-//        settings.setAppCacheEnabled(true);
-//        settings.setDatabaseEnabled(true);
-//        settings.setDomStorageEnabled(true);
-//        settings.setJavaScriptEnabled(true); // 支持与Javascript交互
-//        settings.setGeolocationEnabled(true);
-//        settings.setAppCachePath(this.getDir("appcache", 0).getPath());
-
-        settings.setUseWideViewPort(true);//设定支持viewport
-        settings.setLoadWithOverviewMode(true);   //自适应屏幕
+        // 设置缓存策略
+        // LOAD_DEFAULT：默认方式，如果存在缓存，并且没有过期，则从缓存获取，否则从网络获取
+        // LOAD_CACHE_ELSE_NETWORK: 使用本地缓存，过期了也会使用，如果不存在则从网络加载
+        // LOAD_NO_CACHE: 从网络上获取资源，不适用本地缓存
+        // LOAD_CACHE_ONLY：只使用本地缓存，不从网络上获取资源
+        settings.setCacheMode(WebSettings.LOAD_DEFAULT);
+        // 设置webview加载页面内容编码
+        settings.setDefaultTextEncodingName("gbk");
+        // 设置webview是否可以访问文件数据
+        settings.setAllowFileAccess(true);
+        // 设置加载网页时是否加载图片
+        settings.setBlockNetworkImage(true);
+        // 设置用户触摸是否显示缩放控制图标，隔一段时间会自动消失
         settings.setBuiltInZoomControls(true);
-//        settings.setDisplayZoomControls(false);
-        settings.setTextZoom(150); // 设置字体大小
-        settings.setSupportZoom(true);//设定支持缩放
+        // 设置默认字体大小，取值1-72，默认值是16
+        settings.setDefaultFontSize(16);
+        // 设置webview使用的字体，默认是 monospace
+        settings.setFixedFontFamily("monospace");
+        // 设置页面布局显示式样
+        // NARROW_COLUMNS：可能的话使所有列的宽度不超过屏幕宽度
+        // NORMAL：正常显示不做任何渲染
+        // SINGLE_COLUMN：把所有内容放大webview等宽的一列中
+        settings.setLayoutAlgorithm(WebSettings.LayoutAlgorithm.NARROW_COLUMNS); // 设置布局方式
+        // 设置用鼠标激活
+        settings.setLightTouchEnabled(true);
+        // 设置webview是否支持缩放，默认是支持的
+        settings.setSupportZoom(true);
+        // 设置webview是否支持wiewport
+        settings.setUseWideViewPort(true);
+        // 设置WebView是否支持多屏窗口
+        settings.setSupportMultipleWindows(false);
+        // 设置是否开启Application缓存，默认是false
+        settings.setAppCacheEnabled(false);
+        // 设置是否开启数据库权限，默认是false
+        settings.setDatabaseEnabled(false);
+        // 是否开启DOM存储权限，默认是false
+        settings.setDomStorageEnabled(false);
+        // 设置是否支持Javascript交互
+        settings.setJavaScriptEnabled(true);
+        // 启动地理定位
+        settings.setGeolocationEnabled(true);
+        // 提供的路径,在H5使用缓存过程中生成的缓存文件
+        settings.setAppCachePath(this.getDir("appcache", 0).getPath());
+        // 缩放至屏幕大小
+        settings.setLoadWithOverviewMode(true);
+        // 设置是否显示缩放控件
+        settings.setDisplayZoomControls(false);
+        // 设置字体大小
+        settings.setTextZoom(150);
     }
 
 }

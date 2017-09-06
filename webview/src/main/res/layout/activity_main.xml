@@ -24,4 +24,14 @@
         android:onClick="testScroll"
         android:text="WebView滚动监听"/>
 
+    <Button
+        android:id="@+id/btn_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_scroll"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="false"
+        android:onClick="testError"
+        android:text="WebView出错处理"/>
+
 </RelativeLayout>

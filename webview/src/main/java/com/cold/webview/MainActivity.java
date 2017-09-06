@@ -44,4 +44,16 @@ public class MainActivity extends AppCompatActivity {
         it.setClass(MainActivity.this, ScrollActivity.class);
         startActivity(it);
     }
+
+    /**
+     * webview滚动监听
+     * @param
+     * @return
+     */
+    public void testError(View v) {
+        Intent it = new Intent();
+        it.setClass(MainActivity.this, ErrorActivity.class);
+        startActivity(it);
+    }
+
 }

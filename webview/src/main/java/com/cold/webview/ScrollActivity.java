@@ -17,7 +17,7 @@ import android.widget.Toast;
  * desc: webview 滚动监听
  * author:
  * date: 2017-06-16 15:10
- * remark:
+ * remark: 通过WebView 的ScrollChangedListener实现
  */
 public class ScrollActivity extends AppCompatActivity {
 
