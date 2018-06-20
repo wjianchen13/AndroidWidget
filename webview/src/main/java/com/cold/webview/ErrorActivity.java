@@ -89,7 +89,8 @@ public class ErrorActivity extends AppCompatActivity {
         });
         webView.setWebChromeClient(new WebChromeClient() {
         });
-        url = "http://blog.csdn.net/qq282330332/article/details/77487713";
+//        url = "http://blog.csdn.net/qq282330332/article/details/77487713";
+        url = "https://tapi.95xiu.com/web/new_active_web_view_match.php?v=3";
         new Thread(new Runnable() {
             @Override
             public void run() {

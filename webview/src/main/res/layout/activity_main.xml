@@ -34,4 +34,24 @@
         android:onClick="testError"
         android:text="WebView出错处理"/>
 
+    <Button
+        android:id="@+id/btn_mode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_error"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="false"
+        android:onClick="testMode"
+        android:text="WebView Mode"/>
+
+    <Button
+        android:id="@+id/btn_cache"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_mode"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="false"
+        android:onClick="testCache"
+        android:text="WebView Cache"/>
+
 </RelativeLayout>

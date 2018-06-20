@@ -46,13 +46,35 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * webview滚动监听
+     * webview 出错处理
      * @param
      * @return
      */
     public void testError(View v) {
         Intent it = new Intent();
         it.setClass(MainActivity.this, ErrorActivity.class);
+        startActivity(it);
+    }
+
+    /**
+     * webview mode
+     * @param
+     * @return
+     */
+    public void testMode(View v) {
+        Intent it = new Intent();
+        it.setClass(MainActivity.this, MixActivity.class);
+        startActivity(it);
+    }
+
+    /**
+     * webview 缓存
+     * @param
+     * @return
+     */
+    public void testCache(View v) {
+        Intent it = new Intent();
+        it.setClass(MainActivity.this, CacheActivity.class);
         startActivity(it);
     }
 

@@ -1,1 +1,1 @@
-include ':app', ':webview', ':recyclerview'
+include ':app', ':webview', ':recyclerview', ':viewpager', ':listview', ':dialog', ':bottomsheetdialogfragment', ':base', ':scrollview', ':coordinatorlayout'

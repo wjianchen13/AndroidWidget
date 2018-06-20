@@ -16,6 +16,8 @@
         <activity android:name=".BaseActivity"/>
         <activity android:name=".ScrollActivity"/>
         <activity android:name=".ErrorActivity"/>
+        <activity android:name=".MixActivity"/>
+        <activity android:name=".CacheActivity"/>
     </application>
 
 </manifest>

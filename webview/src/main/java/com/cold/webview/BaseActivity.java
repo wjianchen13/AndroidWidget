@@ -42,8 +42,8 @@ public class BaseActivity extends AppCompatActivity {
         rlytTest.addView(webView);
         tvText = (TextView) findViewById(R.id.tv_test);
         WebSettings settings = webView.getSettings();
-        setWebViewSettings(settings);
-
+//        setWebViewSettings(settings);
+        settings.setJavaScriptEnabled(true);
         webView.setBackgroundColor(Color.parseColor("#00000000"));
         webView.setWebViewClient(new WebViewClient() {
 
@@ -82,7 +82,7 @@ public class BaseActivity extends AppCompatActivity {
         webView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY); // 滚动条在WebView外侧显示
 
         webView.loadUrl("http://www.qq.com");
-        webView.setInitialScale(80);
+//        webView.setInitialScale(80);
     }
 
     /**
