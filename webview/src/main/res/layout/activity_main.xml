@@ -103,4 +103,13 @@
         android:onClick="onCornor3"
         android:text="WebView 圆角3"/>
 
+    <Button
+        android:id="@+id/btn_muti_webview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_cornor3"
+        android:textAllCaps="false"
+        android:onClick="onMutiWebview"
+        android:text="ViewPager WebView"/>
+
 </RelativeLayout>

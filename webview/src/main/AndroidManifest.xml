@@ -24,6 +24,7 @@
         <activity android:name=".CornorActivity1"/>
         <activity android:name=".CornorActivity2"/>
         <activity android:name=".CornorActivity3"/>
+        <activity android:name=".muti.MutiWebViewActivity"/>
 
     </application>
 

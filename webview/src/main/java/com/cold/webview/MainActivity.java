@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.cold.webview.muti.MutiWebViewActivity;
+
 /**
  * name: MainActivity
  * desc: webview 使用方法
@@ -143,5 +145,15 @@ public class MainActivity extends AppCompatActivity {
         it.setClass(MainActivity.this, CornorActivity3.class);
         startActivity(it);
     }
-
+    
+    /**
+     * ViewPager WebView嵌套
+     * @param
+     * @return
+     */
+    public void onMutiWebview(View v) {
+        Intent it = new Intent();
+        it.setClass(MainActivity.this, MutiWebViewActivity.class);
+        startActivity(it);
+    }
 }
