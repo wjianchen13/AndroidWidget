@@ -9,8 +9,9 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:padding="10dp"
-        android:text="获取布局高度，导航栏显示隐藏"
-        android:onClick="onTest"/>
+        android:text="视差视图"
+        android:onClick="onTest"
+        android:textAllCaps="false"/>
 
     <Button
         android:layout_width="match_parent"
@@ -20,5 +21,58 @@
         android:text="测试"
         android:onClick="onTest1"/>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Base Behavior"
+        android:onClick="onBaseBehavior"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="粘性viewpager"
+        android:onClick="onSticky"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="CoordinatorLayout基础使用"
+        android:onClick="onBase"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="项目demo"
+        android:onClick="onProject"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="个人资料"
+        android:onClick="onUser"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="折叠方式"
+        android:onClick="onCollapse"
+        android:textAllCaps="false"/>
 
 </LinearLayout>

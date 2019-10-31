@@ -4,9 +4,12 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.LinearLayout;
+import android.widget.ScrollView;
 
 import com.cold.recyclerview.add.AddActivity;
 import com.cold.recyclerview.base.BaseActivity;
+import com.cold.recyclerview.fall.FallActivity;
 import com.cold.recyclerview.header.HeaderActivity;
 import com.cold.recyclerview.refresh.RefreshActivity;
 import com.cold.recyclerview.span.SpanActivity;
@@ -84,6 +87,28 @@ public class MainActivity extends Activity {
     public void onAdd(View v) {
         Intent it = new Intent();
         it.setClass(MainActivity.this, AddActivity.class);
+        startActivity(it);
+    }
+
+    /**
+     * 添加头部底部
+     * @param
+     * @return
+     */
+    public void onFall(View v) {
+        Intent it = new Intent();
+        it.setClass(MainActivity.this, FallActivity.class);
+        startActivity(it);
+    }
+
+    /**
+     * 添加头部底部
+     * @param
+     * @return
+     */
+    public void onProjectFall(View v) {
+        Intent it = new Intent();
+        it.setClass(MainActivity.this, FallActivity.class);
         startActivity(it);
     }
 

@@ -31,12 +31,13 @@ public class DialogActivity extends AppCompatActivity {
         @Override
         protected void onPostExecute(Void result) {
             super.onPostExecute(result);
-            //if (!isFinishing()) {
-            try {
+            if (!isFinishing()) {
+//            try {
                 createAlertDialog().show();
-            } catch (Exception e) {
-                e.printStackTrace();
             }
+//            } catch (Exception e) {
+//                e.printStackTrace();
+//            }
 //            Toast.makeText(DialogActivity.this, "Toast show", Toast.LENGTH_SHORT).show();
 
         }

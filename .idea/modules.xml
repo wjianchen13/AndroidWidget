@@ -8,6 +8,9 @@
       <module fileurl="file://$PROJECT_DIR$/bottomsheetdialogfragment/bottomsheetdialogfragment.iml" filepath="$PROJECT_DIR$/bottomsheetdialogfragment/bottomsheetdialogfragment.iml" />
       <module fileurl="file://$PROJECT_DIR$/coordinatorlayout/coordinatorlayout.iml" filepath="$PROJECT_DIR$/coordinatorlayout/coordinatorlayout.iml" />
       <module fileurl="file://$PROJECT_DIR$/dialog/dialog.iml" filepath="$PROJECT_DIR$/dialog/dialog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dialogfragment/dialogfragment.iml" filepath="$PROJECT_DIR$/dialogfragment/dialogfragment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/edittext/edittext.iml" filepath="$PROJECT_DIR$/edittext/edittext.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gridlayout/gridlayout.iml" filepath="$PROJECT_DIR$/gridlayout/gridlayout.iml" />
       <module fileurl="file://$PROJECT_DIR$/listview/listview.iml" filepath="$PROJECT_DIR$/listview/listview.iml" />
       <module fileurl="file://$PROJECT_DIR$/recyclerview/recyclerview.iml" filepath="$PROJECT_DIR$/recyclerview/recyclerview.iml" />
       <module fileurl="file://$PROJECT_DIR$/scrollview/scrollview.iml" filepath="$PROJECT_DIR$/scrollview/scrollview.iml" />

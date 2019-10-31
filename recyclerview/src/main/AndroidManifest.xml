@@ -18,6 +18,7 @@
         <activity android:name=".visiblestate.StateActivity" />
         <activity android:name=".refresh.RefreshActivity" />
         <activity android:name=".add.AddActivity" />
+        <activity android:name=".fall.FallActivity"/>
     </application>
 
 </manifest>

@@ -51,7 +51,7 @@ public class HeaderActivity extends Activity {
     private ArrayList<String> generateData() {
         ArrayList<String> data = new ArrayList<String>() {
             {
-                for(int i=0;i<21;i++) add("数据" + i);
+                for(int i=0;i<50;i++) add("数据" + i);
             }
         };
         return data;

@@ -78,4 +78,70 @@ public class MainActivity extends AppCompatActivity {
         startActivity(it);
     }
 
+    /**
+     * webview 获取页面title
+     * @param
+     * @return
+     */
+    public void testTitle(View v) {
+        Intent it = new Intent();
+        it.setClass(MainActivity.this, TitleActivity.class);
+        startActivity(it);
+    }
+
+    /**
+     * webview 重新加载页面
+     * @param
+     * @return
+     */
+    public void onReload(View v) {
+        Intent it = new Intent();
+        it.setClass(MainActivity.this, ReloadActivity.class);
+        startActivity(it);
+    }
+
+    /**
+     * webview 圆角
+     * @param
+     * @return
+     */
+    public void onCornor(View v) {
+        Intent it = new Intent();
+        it.setClass(MainActivity.this, CornorActivity.class);
+        startActivity(it);
+    }
+
+    /**
+     * webview 圆角
+     * @param
+     * @return
+     */
+    public void onCornor1(View v) {
+        Intent it = new Intent();
+        it.setClass(MainActivity.this, CornorActivity1.class);
+        startActivity(it);
+    }
+
+    /**
+     * webview 圆角
+     * @param
+     * @return
+     */
+    public void onCornor2(View v) {
+        Intent it = new Intent();
+        it.setClass(MainActivity.this, CornorActivity2.class);
+        startActivity(it);
+    }
+
+    /**
+     * webview 圆角
+     * @param
+     * @return
+     */
+    public void onCornor3(View v) {
+        Intent it = new Intent();
+        it.setClass(MainActivity.this, CornorActivity3.class);
+        startActivity(it);
+    }
+
 }

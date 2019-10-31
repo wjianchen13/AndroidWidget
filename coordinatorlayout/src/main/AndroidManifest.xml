@@ -1,19 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.sunfusheng.coordinatorlayout">
+    package="com.cold.coordinatorlayout">
 
     <application android:allowBackup="true" android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name" android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true" android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name="com.cold.coordinatorlayout.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.sunfusheng.coordinatorlayout.viewpager.ViewPagerParallaxSnap"/>
-        <activity android:name="com.sunfusheng.coordinatorlayout.test.TestActivity"/>
+        <activity android:name="com.cold.coordinatorlayout.viewpager.ViewPagerParallaxSnap"/>
+        <activity android:name="com.cold.coordinatorlayout.test.TestActivity"/>
+        <activity android:name="com.cold.coordinatorlayout.basebehavior.BaseActivity" />
+        <activity android:name="com.cold.coordinatorlayout.stickyviewpager.StickyActivity" />
+        <activity android:name="com.cold.coordinatorlayout.userinfo.UserActivity" />
+        <activity android:name="com.cold.coordinatorlayout.base.BaseActivity" />
+        <activity android:name="com.cold.coordinatorlayout.project.ProjectActivity" />
+        <activity android:name="com.cold.coordinatorlayout.collapse.CollapseActivity" />
     </application>
 
 </manifest>

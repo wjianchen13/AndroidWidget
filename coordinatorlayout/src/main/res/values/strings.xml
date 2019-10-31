@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">coordinatorLayout</string>
+
+    <string name="behavior_sample_title">com.cold.coordinatorlayout.base.SampleTitleBehavior</string>
+    <string name="behavior_main_header">com.cold.coordinatorlayout.project.MainHeaderBehavior</string>
+    <string name="behavior_main_title">com.cold.coordinatorlayout.project.MainTitleBehavior</string>
+    <string name="behavior_main_tab">com.cold.coordinatorlayout.project.MainTabBehavior</string>
+    <string name="behavior_main_content">com.cold.coordinatorlayout.project.MainContentBehavior</string>
 </resources>
