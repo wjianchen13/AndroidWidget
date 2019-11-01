@@ -1,9 +1,11 @@
-package com.cold.viewpager;
+package com.cold.viewpager.normal;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.view.View;
+
+import com.cold.viewpager.R;
 
 import java.util.List;
 

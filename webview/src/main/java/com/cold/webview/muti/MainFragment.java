@@ -13,8 +13,6 @@ import android.widget.TextView;
 
 import com.cold.webview.R;
 
-import java.util.List;
-
 public class MainFragment extends Fragment implements ViewPager.OnPageChangeListener {
 
     protected ViewPager vpTest;
@@ -147,7 +145,7 @@ public class MainFragment extends Fragment implements ViewPager.OnPageChangeList
         @Override
         public void destroyItem(ViewGroup container, int position, Object object) {
             //如果注释这行，那么不管怎么切换，page都不会被销毁
-            // super.destroyItem(container, position, object);
+             super.destroyItem(container, position, object);
         }
     }
 }

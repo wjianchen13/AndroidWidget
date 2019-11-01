@@ -1,4 +1,4 @@
-package com.cold.viewpager;
+package com.cold.viewpager.normal;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -9,6 +9,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import com.cold.viewpager.R;
+import com.cold.viewpager.base.TestFragment0;
+import com.cold.viewpager.base.TestFragment1;
+import com.cold.viewpager.base.TestFragment2;
 
 import java.util.List;
 
